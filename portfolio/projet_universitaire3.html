@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Carte d'invitation</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style_uni2.css">
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<style>
+		.cRetour {
+ 			 border-radius:3px;
+  			 padding:10px;
+			 font-size:15px;
+			 text-align:center;
+			 color:#fff;
+			 background:rgba(0, 0, 0, 0.25);
+			 z-index:99999;
+			 transition:all ease-in 0.2s;
+			 position: fixed;
+			 cursor: pointer;
+			 bottom: 1em;
+			 right: 20px;
+			 display: none;
+}
+		
+.cRetour:before{ content: "\25b2"; }
+.cRetour:hover{
+  background:rgba(0, 0, 0, 1);
+  transition:all ease-in 0.2s;
+}
+</style>
+</head>
+<body>
+	
+	<script>            
+jQuery(document).ready(function() {
+  var duration = 500;
+  jQuery(window).scroll(function() {
+    if (jQuery(this).scrollTop() > 100) {
+      // Si un défillement de 100 pixels ou plus.
+      // Ajoute le bouton
+      jQuery('.cRetour').fadeIn(duration);
+    } else {
+      // Sinon enlève le bouton
+      jQuery('.cRetour').fadeOut(duration);
+    }
+  });
+				
+  jQuery('.cRetour').click(function(event) {
+    // Un clic provoque le retour en haut animé.
+    event.preventDefault();
+    jQuery('html, body').animate({scrollTop: 0}, duration);
+    return false;
+  })
+});
+</script>
+
+<div class="cRetour"></div>
+	
+	<div id="bloc_page">
+		<header>
+			<div id="titre_principal">
+				<h1>Monica Phirmis</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Accueil</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="intro">
+			<pre>
+	      C'est un projet réalisé dans le cadre du cours d'art et programmation informatique
+	      de la licence EVMAN en troisième année, l'utilisation de Unity. Un thème a été imposé,
+              l'Anthropocène. J'ai choisi de réaliser un environnement 3D sous la forme d'un RPG. 
+	      C'est un projet qui est encore en cours de réalisation ce dernier sera terminé d'ici
+	      la fin de l'année scolaire 2021.  
+			</pre>
+			<pre class="date">
+	      Date : 2020
+	      Plateforme : PC 
+	      Logiciels utilisés : Photoshop 
+			</pre>
+		</div>
+		<br>
+		<div id="presentation">
+				<h1>Mise en couleur </h1>
+		</div>
+		<br>
+		<section>
+			<article>
+				<div id="article">
+					<img src="img/projet_retouche_photo/Nadar _Sarah_Bernhardt_1864.jpg" alt="1" style="width: 75%;" class="space">
+					<div class="titre_secondaire">
+						<h1>Une autre façon d'utiliser photoshop</h1>
+					</div>
+					<pre>
+	   Avec photoshop au cours de mon parcours scolaire, il a souvent été d'ordre de rendre 
+	   invisible les choses mais cette fois avec ce projet ça a été tout autrement.         
+	   Dans le cadre du cours de design numérique, nous nous sommes intéresé aux            
+	   photographies monochrome ainsi qu'à la photographie en général. C'est un cours qui à 
+	   été associer à la pratique de la photographie au sein de l'Université Gustave Eiffel.
+	   Il nous a été possible ainsi de retoucher les photos prises dans le cadre du cours   
+	   dans celui de design numérique.                                                      
+	   
+	   Nous avons ainsi appris une autre façon d'utiliser photoshop et rapidement, le sujet 
+	   de la photograhie monochrome à été abordé. Plusieurs techniques de recoloration nous 
+	   on été apprises, de ce fait, notre dernier TP à été de recolorer plusieurs           
+	   photographies en noir et blanc avec différentes méthodes, toutes aussi différentes   
+	   des autres.                                                                          
+	   
+					</pre>
+					<div class="titre_secondaire">
+						<h1>Du noir et blanc à la couleur : première méthode</h1>
+					</div>
+					<pre>
+	Afin de parvenir à redonner de la couleur à une photographie, il est possible de     
+	passer par quatre méthodes différentes. Ici nous allons voir la première             
+	dont l'idée est d'appliquer des couleurs sur différentes parties de l'image à l'aide  
+	de calques de réglages nommée "Courbes". On peut constater le résultat ci-dessous.    
+                                                                                            
+					</pre>
+					<div class="img_seul">
+					<img src="img/projet_retouche_photo/methode_1.jpg" alt="1" style="width: 75%;" class="space">
+					</div>
+					
+					<div class="titre_secondaire">
+						<h1>La deuxième méthode</h1>
+					</div>
+					<pre>
+	Pour la deuxième méthode à été de coloriser à l'aide de calques de remplissage où la 
+	recherche s'est accentué sur la bonne couleur pour les tons chairs. Ici le mode de   
+	fusion le plus adapté à été l'incrustation et beaucoup plus subtil.                  
+	                                                                                    
+					</pre>
+					<div class="img_seul">
+					<img src="img/projet_retouche_photo/methode_2.jpg" alt="1" style="width: 75%;" class="space">
+					</div>
+					
+					<div class="titre_secondaire">
+						<h1>La troisième méthode</h1>
+					</div>
+				  <pre>
+	La troisième technique est l'utilisation de courbes de transferts de dégradés. C'est 
+	une technique utilisé par le photographe Sean Tucker. On peut d'ailleurs retrouver   
+	une vidéo montrant cette technique :                                                 
+					</pre>
+					<p><a href="https://www.youtube.com/watch?v=xdaELrYQMPk">ici : https://www.youtube.com/watch?v=xdaELrYQMPk</a></p>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/xdaELrYQMPk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					
+					<div class="img_seul">
+					<img src="img/projet_retouche_photo/methode_3.jpg" alt="1" style="width: 75%;" class="space">
+					</div>
+					
+					<div class="titre_secondaire">
+						<h1>La quatrième méthode</h1>
+					</div>
+					<pre>
+	Pour cette technique, c'est l'utilisation de l'intelligence articielle qui est à     
+	l'honneur. Une agence gouvernementale de Singapour, Govtech a mis à disposition des 
+	internautes un outil de conversion d'images noir et blanc en couleur. Le but étant de
+	développer un outil de colorisation fonctionnant selon le principe du "deep learning" 
+	pour coloriser des photographies anciennes noir et blanc de Singapour. Le but de cet  
+	outil est de générer une image avec des couleurs qui sont plausibles, néanmoins ça ne 
+	garantit pas une représentation fidèle de la scène photographiée à l'époque.          
+	                                           
+					</pre>
+					<p><a href="https://colourise.sg/">Lien du site </a></p>
+<div class="img_seul">
+		  <img src="img/projet_retouche_photo/methode_4.jpg" alt="1" style="width: 75%;" class="space">
+		  </div>
+					
+			  </div>
+			</article>
+		</section>
+		
+		<footer>
+			<div id="social">
+				<h1>Social</h1>
+				<p>Facebook</p>
+				<p>Linkeldin</p>
+				<p>Instragram</p>
+				<p>Twitter</p>
+			</div>
+			<div id="contact">
+				<h1>Contact</h1>
+				<p>mon.adressemail@gmail.com</p>
+			</div>
+			<div id="copyright">
+				<p>Copyright * 2020 Phirmis Monica</p>
+			</div>
+		</footer>
+		
+	</div>
+
+
+
+</body>
+</html>
