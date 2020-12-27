@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio Phirmis Monica</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Style -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- scripts -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<style>
+.cRetour {
+  border-radius:3px;
+  padding:10px;
+  font-size:15px;
+  text-align:center;
+  color:#fff;
+  background:rgba(0, 0, 0, 0.25);
+  z-index:99999;
+  transition:all ease-in 0.2s;
+  position: fixed;
+  cursor: pointer;
+  bottom: 1em;
+  right: 20px;
+  display: none;
+}
+.cRetour:before{ content: "\25b2"; }
+.cRetour:hover{
+  background:rgba(0, 0, 0, 1);
+  transition:all ease-in 0.2s;
+}
+</style>
+	
+</head>
+
+<body>
+	
+	<script>            
+		jQuery(document).ready(function() {
+  		var duration = 500;
+  		jQuery(window).scroll(function() {
+    	if (jQuery(this).scrollTop() > 100) {
+      // Si un défillement de 100 pixels ou plus.
+      // Ajoute le bouton
+      jQuery('.cRetour').fadeIn(duration);
+    } else {
+      // Sinon enlève le bouton
+      jQuery('.cRetour').fadeOut(duration);
+    }
+  });
+				
+  jQuery('.cRetour').click(function(event) {
+    // Un clic provoque le retour en haut animé.
+    event.preventDefault();
+    jQuery('html, body').animate({scrollTop: 0}, duration);
+    return false;
+  })
+});
+</script>
+
+<div class="cRetour"></div>
+	
+	<div id="bloc_page">
+		<header>
+			<div id="titre_principal">
+				<h1>Monica Phirmis</h1>
+			</div>
+			
+			<nav>
+				<ul>
+					<li><a href="index.html">Accueil</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<div id="presentation">
+				<h2>Hi Im Phirmis Monica, student of Gustave Eiffel University !</h2>
+		</div>
+		
+		<section>
+			<div id="titre_secondaire">
+				<h1>Présentation / CV</h1>
+				<img src="img/test.jpg" alt="1" style="width:75%;">
+				<h1>Projets Universitaires</h1>
+				<a href="projet_universitaire1.html" target="_top"><img src="img/test.jpg" alt="1" style="width:75%;"></a>
+<h1>Projet Personnels</h1>
+				<img src="img/test.jpg" alt="1" style="width:75%;">
+			</div>
+		</section>
+		
+		<footer>
+			<div id="social">
+				<h1>Social</h1>
+				<p>Facebook</p>
+				<p>Linkeldin</p>
+				<p>Instragram</p>
+				<p>Twitter</p>
+			</div>
+			<div id="contact">
+				<h1>Contact</h1>
+				<p>mon.adressemail@gmail.com</p>
+			</div>
+			<div id="copyright">
+				<p>Copyright * 2020 Phirmis Monica</p>
+			</div>
+		</footer>
+		
+	</div>
+
+</body>
+</html>
