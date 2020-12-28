@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Carte d'invitation</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style_uni2.css">
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<style>
+		.cRetour {
+ 			 border-radius:3px;
+  			 padding:10px;
+			 font-size:15px;
+			 text-align:center;
+			 color:#fff;
+			 background:rgba(0, 0, 0, 0.25);
+			 z-index:99999;
+			 transition:all ease-in 0.2s;
+			 position: fixed;
+			 cursor: pointer;
+			 bottom: 1em;
+			 right: 20px;
+			 display: none;
+}
+		
+.cRetour:before{ content: "\25b2"; }
+.cRetour:hover{
+  background:rgba(0, 0, 0, 1);
+  transition:all ease-in 0.2s;
+}
+</style>
+	
+</head>
+<body>
+	
+	<script>            
+jQuery(document).ready(function() {
+  var duration = 500;
+  jQuery(window).scroll(function() {
+    if (jQuery(this).scrollTop() > 100) {
+      // Si un défillement de 100 pixels ou plus.
+      // Ajoute le bouton
+      jQuery('.cRetour').fadeIn(duration);
+    } else {
+      // Sinon enlève le bouton
+      jQuery('.cRetour').fadeOut(duration);
+    }
+  });
+				
+  jQuery('.cRetour').click(function(event) {
+    // Un clic provoque le retour en haut animé.
+    event.preventDefault();
+    jQuery('html, body').animate({scrollTop: 0}, duration);
+    return false;
+  })
+});
+</script>
+
+<div class="cRetour"></div>
+	
+	<div id="bloc_page">
+		<header>
+			<div id="titre_principal">
+				<h1>Monica Phirmis</h1>
+			</div>
+			<div id="menu">
+					<nav>
+						<ul>
+							<li><a href="index.html">Accueil</a></li>
+						</ul>
+					</nav>
+			</div>
+		</header>
+		<div id="intro">
+			<pre>
+	      C'est un projet réalisé dans le cadre du cours d'art et programmation informatique
+	      de la licence EVMAN en troisième année, l'utilisation de Unity. Un thème a été imposé,
+              l'Anthropocène. J'ai choisi de réaliser un environnement 3D sous la forme d'un RPG. 
+	      C'est un projet qui est encore en cours de réalisation ce dernier sera terminé d'ici
+	      la fin de l'année scolaire 2021.  
+			</pre>
+			<pre class="date">
+	      Date : 2019
+	      Plateforme : PC 
+	      Logiciels utilisés : Photoshop / Illustrator
+			</pre>
+		</div>
+		<br>
+		<div id="presentation">
+				<h1>Carte d'invitation</h1>
+		</div>
+		<br>
+		<section>
+			<article>
+				<div id="article">
+					<img src="img/projet_carte_invitation/recto.png" alt="1" style="width: 75%;" class="space">
+					<div class="titre_secondaire">
+						<h1>Première expérience avec Illustrator</h1>
+					</div>
+					<pre>
+	   Lors de ma première année en étude visuelle, multimédia et arts numériques, nous     
+	   avons entamer l'apprentissage de Illustrator, un logicile de création graphique      
+	    vectorielle. Notre chargé de TD nous as tout d'abord expliquer ce qu'était ce logiciel
+		et rapidement nous sommes passés à la pratique. Afin de comprendre certains principes     
+		notre apprentissage est passé par la méthode "dur", celle de l'utilisation du pathfinder. 
+					</pre>
+					<pre>
+	 Mais avant de passer au pathfinder, il nous as fallut apprendre à manier la plume   
+	 sur Illustrator. Sous la supervision de notre chargé de TD, un dessin à été imposé, 
+	 Mr Hug. Il a fallut reproduire le dessin avec l'outil plume avant de réaliser le    
+	 pathfinder. Cette méthode permet en effet d'éviter la superposition de couleur lors 
+	 de l'impression, elle n'est pas souvent utilisé mais chez certains imprimeur c'est  
+	 nécessaire. En voici le résultat ci-dessous.                                        
+					</pre>
+					<div class="img_seul">
+					<img src="img/projet_carte_invitation/mrhug.png" alt="1" style="width: 80%;" class="space">
+					<div class="titre_secondaire">
+						<h1>Un pas vers la professionnalisation</h1>
+					</div>
+					<pre>
+	Une fois la réalisation de Mr Hug terminé, le commencement de la carte d'invitation  
+	    a pu démarrer. Pour la première fois, un projet à visé professionnel nous a été proposé. 
+	 Il m'a été possible d'entrevoir un morceau du monde du travail qui est assez dificile 
+	 à apercevoir au sein de la formation d'études visuelles.                              
+	 
+	 Il a été possible de se mettre dans la peau d'un graphiste, en ayant la demande d'une 
+	 carte d'invitation ainsi que des contraintes de type : respecté le style de l'auteur  
+	 etc. L'auteur choisi par la chargé de TD à été Ted Naifeh pour réaliser une invitation
+	 au vernissage de l'exposition du Centre de la Bande Dessiné de Paris et il fallait    
+	 mettre en avant la série de comic à travers la carte tout en ayant une typographie qui
+	 convienne au minimum.                                                                  
+	 
+	On peut dire que ça a été une expérience enrichissante dans la mesure où il a été     
+	possible de cotoyer les "difficultés" auxquelles on peut être sujet dans le monde du  
+	graphisme.                                                                            
+	A travers ce projet j'ai pu tester un style graphique tout à fait différent du miens  
+	et j'ai pu élargir mon champs de connaissance et de pratique des logiciles de création
+	graphique.                                                                            
+                                                              
+					</pre>
+					<div class="img_seul">
+					<img src="img/projet_carte_invitation/recto.png" alt="1" style="width: 40%;" class="space">
+					<img src="img/projet_carte_invitation/verso.png" alt="1" style="width: 40%;" class="space">
+					</div>
+					
+				</div>
+				</div>
+			</article>
+		</section>
+		
+		<div id="next">
+	  <h3><a href="projet_universitaire3.html"> Projet Suivant</a></h3>
+    </div>
+		
+		<footer>
+			<div id="social">
+				<h1>Social</h1>
+				<p>Facebook</p>
+				<p>Linkeldin</p>
+				<p>Instragram</p>
+				<p>Twitter</p>
+			</div>
+			<div id="contact">
+				<h1>Contact</h1>
+				<p>mon.adressemail@gmail.com</p>
+			</div>
+			<div id="copyright">
+				<p>Copyright * 2020 Phirmis Monica</p>
+			</div>
+		</footer>
+		
+	</div>
+
+
+
+</body>
+</html>

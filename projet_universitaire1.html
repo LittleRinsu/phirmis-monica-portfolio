@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Anthem of Water</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style_uni.css">
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<style>
+		.cRetour {
+ 			 border-radius:3px;
+  			 padding:10px;
+			 font-size:15px;
+			 text-align:center;
+			 color:#fff;
+			 background:rgba(0, 0, 0, 0.25);
+			 z-index:99999;
+			 transition:all ease-in 0.2s;
+			 position: fixed;
+			 cursor: pointer;
+			 bottom: 1em;
+			 right: 20px;
+			 display: none;
+}
+		
+.cRetour:before{ content: "\25b2"; }
+.cRetour:hover{
+  background:rgba(0, 0, 0, 1);
+  transition:all ease-in 0.2s;
+}
+</style>
+</head>
+<body>
+	
+	<script>            
+jQuery(document).ready(function() {
+  var duration = 500;
+  jQuery(window).scroll(function() {
+    if (jQuery(this).scrollTop() > 100) {
+      // Si un défillement de 100 pixels ou plus.
+      // Ajoute le bouton
+      jQuery('.cRetour').fadeIn(duration);
+    } else {
+      // Sinon enlève le bouton
+      jQuery('.cRetour').fadeOut(duration);
+    }
+  });
+				
+  jQuery('.cRetour').click(function(event) {
+    // Un clic provoque le retour en haut animé.
+    event.preventDefault();
+    jQuery('html, body').animate({scrollTop: 0}, duration);
+    return false;
+  })
+});
+</script>
+
+<div class="cRetour"></div>
+	
+	<div id="bloc_page">
+		<header>
+			<div id="titre_principal">
+				<h1>Monica Phirmis</h1>
+			</div>
+			<div id="menu">
+				<nav>
+					<ul>
+						<li><a href="index.html">Accueil</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div id="intro">
+			<pre>
+	      C'est un projet réalisé dans le cadre du cours d'art et programmation informatique
+	      de la licence EVMAN en troisième année, l'utilisation de Unity. Un thème a été imposé,
+              l'Anthropocène. J'ai choisi de réaliser un environnement 3D sous la forme d'un RPG. 
+	      C'est un projet qui est encore en cours de réalisation ce dernier sera terminé d'ici
+	      la fin de l'année scolaire 2021.  
+			</pre>
+			<pre class="date">
+	      Date : 2020-2021
+	      Plateforme : PC 
+	      Logiciels utilisés : Unity / Maya / Photoshop
+			</pre>
+		</div>
+		<br>
+		<div id="presentation">
+				<h1>Anthem of Water</h1>
+		</div>
+		<br>
+		<section>
+			<article>
+				<div id="article">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/iCID0kwcedY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div class="titre_secondaire">
+						<h1>L'eau au coeur de la vie</h1>
+					</div>
+					<pre>
+       L'Anthropocène, est une époque où l'Homme est au centre des changements sur Terre
+	qui surpassent même les forces géophysique. C'est l'une des nombreuses définitions
+	 que l'on peut trouver sur internet. Par ailleurs l'ensemble de ces changements sont
+	 généré par les conséquences de l'activité humaine : abus des ressources naturelles.
+					</pre>
+					<pre>
+     J'ai choisi de réaliser un jeu dans lequel le joueur incarne un petit personnage
+	 ayant perdu la mémoire et étant endormi depuis des siècles. L'histoire se place dans
+	 un monde post apocalyptique où la Terre se retrouve être un désert aride dont l'eau 
+	   qui l'habitait autrefois à presque entièrement disparue. La mission du personnage sera
+	   de sauver la dernière ville restante sur Terre grâce à ses pouvoirs.                  
+					</pre>
+					<pre>
+	A travers ce jeu, l'importance de l'eau comme source de vie est mise en valeur et  
+	surtout le très grand impact de l'Homme peut avoir sur son environnement qui le    
+	mènera à sa perte.                                                                 
+					</pre>
+					<div class="titre_secondaire">
+						<h1>Le jeu </h1>
+					</div>
+					<pre>
+	C'est un jeu 3D dans un monde semi-ouvert qui se caractérise par trois niveaux :     
+	un premier en tant que prologue dont on peut voir quelques image ci-dessous.         
+	Le personnage va faire la connaissance d'un petit être qui au cours de l'aventure va 
+	être être son guide.                                                                 
+					</pre>
+					
+					<div class="galerie">
+					<img src="img/projet_anthem_of_water/prologue01.png" alt="1" style="width: 25%;" class="space">
+					<img src="img/projet_anthem_of_water/prologue02.png" alt="1" style="width: 25%;" class="space">
+					<img src="img/projet_anthem_of_water/prologue03.png" alt="1" style="width: 25%;" class="space">
+					</div>
+					<pre>
+	Le niveau suivant est celui de la phase d'éveil, où le personnage se réveillera dans  
+	des ruines dans lesquels il va retrouver de nouveau le petit être pour le guider. Une  
+	mission sera confié au personnage : restaurer l'eau de la dernière ville restante. J'ai
+	voulue donner une atmosphère beaucoup plus opprésante dans les ruines pour signifier la
+	fin du rêve, du moment paisible. Le tout est accompagné d'une musique de fond que l'on 
+	peut entendre dans la rapide démo ci-dessous.                                          
+					</pre>
+					
+				<div class="galerie">
+				  <img src="img/projet_anthem_of_water/ruines01.png" alt="1" style="width: 25%;" class="space">
+				  <img src="img/projet_anthem_of_water/ruines02.png" alt="1" style="width: 25%;" class="space">
+				  <img src="img/projet_anthem_of_water/ruines03.png" alt="1" style="width: 25%;" class="space">
+				</div>
+				<pre>
+        Pour l'instant le jeu est à l'état de démo mais j'ai pu apprendre à utiliser un logiciel
+	dont je ne connaissais que le nom, il y a quelques mois. Dans la réalisation de ce jeu   
+	j'ai été confronté aux problématiques des développeurs de jeu vidéo : avoir un scénario  
+	qui tienne la route et transformer les idées en quelque chose de concret, ce qui n'est   
+	pas toujours facile.                                                                      
+				</pre> 	
+				</div>
+			</article>
+		</section>
+		
+	<div id="next">
+	  <h3><a href="projet_universitaire2.html"> Projet Suivant</a></h3>
+    </div>
+		
+		<footer>
+			<div id="social">
+				<h1>Social</h1>
+				<p>Facebook</p>
+				<p>Linkeldin</p>
+				<p>Instragram</p>
+				<p>Twitter</p>
+			</div>
+			<div id="contact">
+				<h1>Contact</h1>
+				<p>mon.adressemail@gmail.com</p>
+			</div>
+			<div id="copyright">
+				<p>Copyright * 2020 Phirmis Monica</p>
+			</div>
+		</footer>
+		
+	</div>
+
+
+
+</body>
+</html>

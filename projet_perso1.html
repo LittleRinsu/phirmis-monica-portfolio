@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Carte d'invitation</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style_uni2.css">
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<style>
+		.cRetour {
+ 			 border-radius:3px;
+  			 padding:10px;
+			 font-size:15px;
+			 text-align:center;
+			 color:#fff;
+			 background:rgba(0, 0, 0, 0.25);
+			 z-index:99999;
+			 transition:all ease-in 0.2s;
+			 position: fixed;
+			 cursor: pointer;
+			 bottom: 1em;
+			 right: 20px;
+			 display: none;
+}
+		
+.cRetour:before{ content: "\25b2"; }
+.cRetour:hover{
+  background:rgba(0, 0, 0, 1);
+  transition:all ease-in 0.2s;
+}
+</style>
+	
+</head>
+<body>
+	
+	<script>            
+jQuery(document).ready(function() {
+  var duration = 500;
+  jQuery(window).scroll(function() {
+    if (jQuery(this).scrollTop() > 100) {
+      // Si un défillement de 100 pixels ou plus.
+      // Ajoute le bouton
+      jQuery('.cRetour').fadeIn(duration);
+    } else {
+      // Sinon enlève le bouton
+      jQuery('.cRetour').fadeOut(duration);
+    }
+  });
+				
+  jQuery('.cRetour').click(function(event) {
+    // Un clic provoque le retour en haut animé.
+    event.preventDefault();
+    jQuery('html, body').animate({scrollTop: 0}, duration);
+    return false;
+  })
+});
+</script>
+
+<div class="cRetour"></div>
+	
+	<div id="bloc_page">
+		<header>
+			<div id="titre_principal">
+				<h1>Monica Phirmis</h1>
+			</div>
+			<div id="menu">
+				<nav>
+					<ul>
+						<li><a href="index.html">Accueil</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div id="intro">
+			<pre>
+              C'est une couverture de livre numérique que j'ai réaliser dans le cadre d'un projet 
+	      personnel qui consistait à créer un livre comme passe-temps extra-scolaire. 
+  
+			</pre>
+			<pre class="date">
+	      Date : 2018
+	      Plateforme : Web 
+	      Logiciels utilisés : Photoshop / ClipStudio Paint
+			</pre>
+		</div>
+		<br>
+		<div id="presentation">
+				<h1>Couverture</h1>
+		</div>
+		<br>
+		<section>
+			<article>
+				<div id="article">
+					<img src="img/projet_couverture/Couverture2.png" alt="1" style="width: 75%;" class="space">
+					<div class="titre_secondaire">
+						<h1>L'écriture</h1>
+					</div>
+					<pre>
+	   J'ai toujours eu une imagination débordante et pour rendre concrète cette imagination, 
+	   j'ai fais le choix d'écrire les histoires qui me sont passé par la tête et surtout une.
+	   Au début, c'était surtout un passe-temps mais c'est vite devenu une passion. Je me suis
+	   plus particulièrement attaché à une histoire que j'ai décidé de publier sur une        
+	   dont je ne donnerai pas le nom ! (ce n'est pas encore assez concret pour) Et           
+	   aujourd'hui, cette histoire comptabilise une soixantaine de chapitres, ce qui est assez
+	   conséquent.                                                                            
+	   
+	   Très rapidement le besoin d'avoir une couverture a part entière s'est fait ressentir, 
+	   j'ai alors décidé d'en créer une qui respecterai certains critères, ce qui n'a pas été
+	   très facile. Il fallait caractériser le nom avec le titre sans pour autant trop en    
+	   dévoiler.                                                                             
+	   
+					</pre>                                   
+					
+					<div class="img_seul">
+					<img src="img/projet_couverture/Couverture.png" alt="1" style="width: 80%;" class="space">
+					<div class="titre_secondaire">
+						<h1>Choix visuel</h1>
+					</div>
+					<pre>
+	J'ai fais des recherches sur les différentes couvertures de livre existante sans     
+	réellement trouver la méthode qui me permettrait de faire une bonne couverture. J'ai 
+	donc choisi laisser aller mon imagination et choisi la meilleure façon de représenter
+	les deux personnages principaux de l'histoire et finalement j'en suis arriver au     
+	résultat ci-dessus. Deux couleurs représentant chacune le caractère de chacun des    
+	personnage. Une couleure et texture froide ainsi qu'une autre avec un mélange de     
+	chaud et de froid.                                                                   
+	         
+					</pre>
+					<div class="img_seul">
+					<img src="img/projet_carte_invitation/recto.png" alt="1" style="width: 40%;" class="space">
+					<img src="img/projet_carte_invitation/verso.png" alt="1" style="width: 40%;" class="space">
+					</div>
+					
+				</div>
+				</div>
+			</article>
+		</section>
+		
+		<div id="next">
+	  <h3><a href="projet_universitaire3.html"> Projet Suivant</a></h3>
+    </div>
+		
+		<footer>
+			<div id="social">
+				<h1>Social</h1>
+				<p>Facebook</p>
+				<p>Linkeldin</p>
+				<p>Instragram</p>
+				<p>Twitter</p>
+			</div>
+			<div id="contact">
+				<h1>Contact</h1>
+				<p>mon.adressemail@gmail.com</p>
+			</div>
+			<div id="copyright">
+				<p>Copyright * 2020 Phirmis Monica</p>
+			</div>
+		</footer>
+		
+	</div>
+
+
+
+</body>
+</html>
