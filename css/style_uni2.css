@@ -1,3 +1,27 @@
+/* Responsive mobile */ 
+
+@media (min-width: 480px) and (max-width: 780px)
+{
+	#bloc_page{float :none ;width: auto;}
+	#menu{float: none ;width: auto;margin-right: 50px;}
+	#next{float: none; width: auto;margin-right: 60px;}
+	#article{float: none; width: auto;margin-right: 100px;}
+	#intro{float: none; width: auto;margin-right: 100px;}
+	
+}
+
+/* Responsive tablette */
+
+@media (min-width: 781px) and (max-width: 979px)
+{
+	#bloc_page{float :none ;width: auto;}
+	#menu{float: none ;width: auto;margin-right: 50px;}
+	#next{float: none; width: auto;margin-right: 60px;}
+	#article{float: none; width: auto;margin-right: 100px;}
+	#intro{float: none; width: auto;margin-right: 100px;}
+	
+}
+
 /* Définition des polices personnalisées */
 
 @font-face
@@ -26,13 +50,7 @@
 
 /* Optimisation */ 
 
-@media all and (max-width: 1024px)
-{
-    #bloc_page
-    {
-        width: auto;
-    }
-}
+
 
 #titre_principal{
 	font-size: 5px;
@@ -71,7 +89,6 @@ section h1, footer h1, nav a{
 	font-family: Dayrom, serif;
     font-weight: bold;
 	line-height: 1.5;
-	font-weight: 400;
 	
 }
 #intro{
