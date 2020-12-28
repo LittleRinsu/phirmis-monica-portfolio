@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=320"/>
+	<meta charset="utf-8">
+	<title>Texture et UV Mapping</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style_uni2.css">
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<style>
+		.cRetour {
+ 			 border-radius:3px;
+  			 padding:10px;
+			 font-size:15px;
+			 text-align:center;
+			 color:#fff;
+			 background:rgba(0, 0, 0, 0.25);
+			 z-index:99999;
+			 transition:all ease-in 0.2s;
+			 position: fixed;
+			 cursor: pointer;
+			 bottom: 1em;
+			 right: 20px;
+			 display: none;
+}
+		
+.cRetour:before{ content: "\25b2"; }
+.cRetour:hover{
+  background:rgba(0, 0, 0, 1);
+  transition:all ease-in 0.2s;
+}
+</style>
+	
+</head>
+<body>
+	
+	<script>            
+jQuery(document).ready(function() {
+  var duration = 500;
+  jQuery(window).scroll(function() {
+    if (jQuery(this).scrollTop() > 100) {
+      // Si un défillement de 100 pixels ou plus.
+      // Ajoute le bouton
+      jQuery('.cRetour').fadeIn(duration);
+    } else {
+      // Sinon enlève le bouton
+      jQuery('.cRetour').fadeOut(duration);
+    }
+  });
+				
+  jQuery('.cRetour').click(function(event) {
+    // Un clic provoque le retour en haut animé.
+    event.preventDefault();
+    jQuery('html, body').animate({scrollTop: 0}, duration);
+    return false;
+  })
+});
+</script>
+
+<div class="cRetour"></div>
+	
+	<div id="bloc_page">
+		<header>
+			<div id="titre_principal">
+				<h1>Monica Phirmis</h1>
+			</div>
+			<div id="menu">
+					<nav>
+						<ul>
+							<li><a href="index.html">Accueil</a></li>
+						</ul>
+					</nav>
+			</div>
+		</header>
+		<div id="intro">
+			<pre>
+	      C'est un projet réalisé dans le cadre du cours d'art et programmation informatique
+	      de la licence EVMAN en troisième année, l'utilisation de Unity. Un thème a été imposé,
+              l'Anthropocène. J'ai choisi de réaliser un environnement 3D sous la forme d'un RPG. 
+	      C'est un projet qui est encore en cours de réalisation ce dernier sera terminé d'ici
+	      la fin de l'année scolaire 2021.  
+			</pre>
+			<pre class="date">
+	      Date : 2020
+	      Plateforme : PC 
+	      Logiciels utilisés : Photoshop / Maya / Unity
+			</pre>
+		</div>
+		<br>
+		<div id="presentation">
+				<h1>Texture et UV Mapping</h1>
+		</div>
+		<br>
+		<section>
+			<article>
+				<div id="article">
+					<img src="img/projet_hourglass/perso.png" alt="1" style="width: 75%;" class="space">
+					<div class="titre_secondaire">
+						<h1>Mon rôle </h1>
+					</div>
+					<pre>
+	   Hourglass est un projet de groupe réalisé dans le cadre du cours de recherche et     
+	   création numérique. Un thème nous a été donné et c'est l'espace-temps. Afin de       
+	   respecter le thème donné, mon groupe et moi avons décidé de réaliser un jeu vidéo    
+	   en associant oeuvre d'art et énigme. Dans ce projet j'ai réaliser la texture du      
+	   personnage principal ainsi que celle des bâtiments présent dans l'un des niveaux du  
+	   jeu. Un mission qui s'est avéré beaucoup difficile que prévue.                        
+					</pre>
+			
+					<div class="titre_secondaire">
+						<h1>Les aléas de l'UV Mapping</h1>
+					</div>
+					<pre>
+	La réalisation de la texture d'objet 3D à été une première pour et elle ne s'est pas 
+	toujours avéré très simple. Je prends l'exemple du personnage, j'ai dû recommencer   
+	plusieurs fois avant de parvenir au résultat ci-dessus, car il faut vérifier à chaque
+	fois si le rendu est bon ce qui fait qu'on peut se retrouver avec neuf versions de   
+      fichier différentes. C'est un travail qui demande rigueur, patience et précision.  
+      C'est une très bonne expérience semi-professionnel dans le cadre d'un projet de    
+	  travaux dirigés, universitaire.                                                        
+                                                                          
+                                                              
+					</pre>
+					<div class="img_seul">
+					<img src="img/projet_hourglass/bat1.png" alt="1" style="width: 40%;" class="space">
+					<img src="img/projet_hourglass/bat2.png" alt="1" style="width: 40%;" class="space">
+					</div>
+					
+				</div>
+			</article>
+		</section>
+		
+		<div id="next">
+	  <h3><a href="#"> Projet Suivant</a></h3>
+    </div>
+		
+		<footer>
+			<div id="social">
+				<h1>Social</h1>
+				<p>Facebook</p>
+				<p>Linkeldin</p>
+				<p>Instragram</p>
+				<p>Twitter</p>
+			</div>
+			<div id="contact">
+				<h1>Contact</h1>
+				<p>mon.adressemail@gmail.com</p>
+			</div>
+			<div id="copyright">
+				<p>Copyright * 2020 Phirmis Monica</p>
+			</div>
+		</footer>
+		
+	</div>
+
+
+
+</body>
+</html>
